@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="inner_nav">
+            <img src="YL_Website.png" alt="LOGO">
+            <h2>YANNICK LONGVAL</h2>
+        </div>
+        <div class="inner_nav">
+            <ul>
+                <li id="home_box"><a href="" id="home">HOME</a></li>
+                <li id="about_box"><a href="" id="about">ABOUT ME</a></li>
+                <li id="coding_box"><a href="" id="coding">CODING</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script type="text/javascript">
+
+        window.onscroll = function() {scroll()};
+
+        function scroll(){
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            if (winScroll < 0.5 * document.documentElement.clientHeight){
+                document.getElementById("home").style.color = "#19ef92"
+                document.getElementById("about").style.color = "#ffffff"
+                document.getElementById("coding").style.color = "#ffffff"
+            }
+            if (winScroll >= 0.5* document.documentElement.clientHeight && winScroll < 1.5 * document.documentElement.clientHeight){
+                document.getElementById("about").style.color = "#19ef92"
+                document.getElementById("home").style.color = "#ffffff"
+                document.getElementById("coding").style.color = "#ffffff"
+            }
+            if (winScroll >= 1.5* document.documentElement.clientHeight - 80) {
+                document.getElementById("coding").style.color = "#19ef92"
+                document.getElementById("home").style.color = "#ffffff"
+                document.getElementById("about").style.color = "#ffffff"
+            }
+        }
+    </script>
+</body>
+</html>
