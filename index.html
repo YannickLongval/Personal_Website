@@ -18,14 +18,54 @@
         </div>
         <div class="inner_nav">
             <ul>
-                <li id="home_box"><a href="" id="home">HOME</a></li>
-                <li id="about_box"><a href="" id="about">ABOUT ME</a></li>
-                <li id="coding_box"><a href="" id="coding">CODING</a></li>
+                <li id="home-page"><a href="#home">HOME</a></li>
+                <li id="about-page"><a href="#about">ABOUT ME</a></li>
+                <li id="coding-page"><a href="#coding">CODING</a></li>
             </ul>
         </div>
     </nav>
-
-    <script type="text/javascript">
+    <div class="home" id="home">
+        <div class="home-container">
+            <h2>Welcome to my <br><span class="PW-text">Personal Website</span></h2>
+            <p>Where I showcase myself and my passions</p>
+        </div>
+    </div>
+    <div class="about" id="about">
+        <div class="about-container">
+            <h2>Who is Yannick Longval?</h2>
+            <div class="me">
+                <h3 class="info">INFO</h3>
+                <h3 class="hobbies">HOBBIES</h3>
+                <h3 class="skills">SKILLS</h3>
+                <p class="right">From Ottawa, Canada</p>
+                <p class="right">Working Out</p>
+                <p>Problem Solving</p>
+                <p class="right">First Year at the University of Toronto</p>
+                <p class="right">Playing Piano</p>
+                <p>Critical Thinking</p>
+            </div>
+        </div>
+    </div>
+    <div class="coding" id="coding">
+        <h2>Coding</h2>
+        <div class="coding-container">
+            <div class="coding-text">
+                <h3>Languages</h3>
+                <ul>
+                    <li><p>Python</p></li>
+                    <li><p>HTML/CSS/JS</p></li>
+                    <li><p>SQL</p></li>
+                    <li><p>Java</p></li>
+                </ul>
+            </div>
+            <div class="coding-text">
+                <h3>Projects</h3>
+                <p>Find my projects on my <a href="https://github.com/YannickLongval">GitHub</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- <script type="text/javascript">
 
         window.onscroll = function() {scroll()};
 
@@ -47,6 +87,11 @@
                 document.getElementById("about").style.color = "#ffffff"
             }
         }
-    </script>
+
+        function clickScroll(pos){
+            window.scroll(0, pos)
+        }
+    </script> -->
+    <script src = "app.js"></script>
 </body>
 </html>

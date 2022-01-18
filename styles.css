@@ -1,17 +1,20 @@
 * {
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 300;
+    color: #ffffff;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: #323044;
     margin: 0;
     width: 100%;
-    height: calc(300vh - 160px)
 }
 
 nav {
-    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 999;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -57,9 +60,102 @@ nav {
 
 .inner_nav ul li a{
     text-decoration: none;
-    color: #ffffff;
+    transition: all 0.3s ease;
 }
 
-#home{
-    color: #19ef92;
+.home{
+    height: calc(100vh - 120px);
+    padding: 50px;
+}
+
+.home-container{
+    margin: 25vh 60px;
+}
+
+.home-container h2{
+    font-size: 80px;
+    margin: 0;
+}
+
+.home-container p{
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.PW-text {
+    background: #19EF82;
+    background: -webkit-linear-gradient(to top, #19EF82, #ffffff);
+    background: linear-gradient(to top, #19EF82, #ffffff);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.about {
+    height: calc(100vh - 120px);
+    padding: 100px;
+}
+
+.about-container h2 {
+    text-align: center;
+    font-size: 60px;
+    margin: 40px 0;
+}
+
+.me{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
+    text-align: center;
+    font-size: 30px;
+}
+
+.me h3 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.me p{
+    padding: 50px 0;
+    margin: 0;
+}
+
+.right{
+    border-right: 3px solid #454267
+}
+
+.coding {
+    height: calc(100vh - 120px);
+    padding: 20px;
+}
+
+.coding h2 {
+    font-size: 60px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.coding-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.coding-text h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.coding-text p {
+    font-size: 30px;
+}
+
+a:hover {
+    color: #19EF82;
+}
+
+.highlight {
+    box-shadow: inset 0px -10px 10px 3px rgba(25, 239, 130, 0.5);
+    transition: all 0.3s ease;
 }
