@@ -1,14 +1,21 @@
+:root {
+    --main: #323044;
+    --text: #ffffff;
+    --comp: #19EF82;
+}
+
 * {
     font-family: 'Chakra Petch', sans-serif;
     font-weight: 300;
-    color: #ffffff;
+    color: var(--text);
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #323044;
+    background-color: var(--main);
     margin: 0;
     width: 100%;
+    transition: all 1.0s ease;
 }
 
 nav {
@@ -60,7 +67,7 @@ nav {
 
 .inner_nav ul li a{
     text-decoration: none;
-    transition: all 0.3s ease;
+    color: #ffffff;
 }
 
 .home{
@@ -83,9 +90,9 @@ nav {
 }
 
 .PW-text {
-    background: #19EF82;
-    background: -webkit-linear-gradient(to top, #19EF82, #ffffff);
-    background: linear-gradient(to top, #19EF82, #ffffff);
+    background: var(--comp);
+    background: -webkit-linear-gradient(to top, var(--comp), var(--text));
+    background: linear-gradient(to top, var(--comp), var(--text));
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -151,8 +158,13 @@ nav {
     font-size: 30px;
 }
 
+a {
+    transition: all 0.3s ease;
+}
+
 a:hover {
-    color: #19EF82;
+    color: #19EF82 !important;
+    transition: all 0.3s ease;
 }
 
 .highlight {
