@@ -72,12 +72,22 @@ nav {
 
 .home{
     height: calc(100vh - 120px);
-    padding: 50px;
+    width: 100%;
+    padding: 80px 0;
 }
 
 .home-container{
-    margin: 25vh 60px;
+    margin: 0 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: space-around;
 }
+
+.home-container img{
+    height: 550px;
+}
+
 
 .home-container h2{
     font-size: 80px;
@@ -101,7 +111,8 @@ nav {
 
 .about {
     height: calc(100vh - 120px);
-    padding: 100px;
+    width: 100%;
+    padding: 100px 0;
 }
 
 .about-container h2 {
@@ -124,7 +135,7 @@ nav {
 }
 
 .me p{
-    padding: 50px 0;
+    padding: 50px 20px;
     margin: 0;
 }
 
@@ -134,7 +145,8 @@ nav {
 
 .coding {
     height: calc(100vh - 120px);
-    padding: 20px;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .coding h2 {
@@ -170,4 +182,65 @@ a:hover {
 .highlight {
     box-shadow: inset 0px -10px 10px 3px rgba(25, 239, 130, 0.5);
     transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .inner_nav h2 {
+        font-size: 30px;
+    }
+    
+    
+    .inner_nav ul li{
+        padding: 0 20px;
+        font-size: 20px;
+    }
+
+    .home-container h2{
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .home-container p{
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .home-container img{
+        height: 450px;
+    }
+
+    .about-container h2 {
+        font-size: 50px;
+    }
+    
+    .me{
+        font-size: 20px;
+    }
+    
+    .me h3 {
+        font-size: 30px;
+    }
+
+    .coding h2 {
+        font-size: 50px;
+    }
+    
+    .coding-text h3 {
+        font-size: 30px;
+    }
+    
+    .coding-text p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .inner_nav ul{
+        display: none;
+    }
+
+    .home-container{
+        flex-direction: column;
+    }
 }
