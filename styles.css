@@ -184,6 +184,44 @@ a:hover {
     transition: all 0.3s ease;
 }
 
+.container {
+    width: 100vw;
+    height: 80vh;
+}
+
+.container-wrapper {
+    width: 60%;
+    margin: auto;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.content h2 {
+    font-size: 50px;
+    margin: 30px 0;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project_img {
+    width: 300px;
+    margin-left: 100px;
+}
+
+
+
 @media screen and (max-width: 1100px) {
 
     .inner_nav h2 {
@@ -233,6 +271,18 @@ a:hover {
     .coding-text p {
         font-size: 20px;
     }
+
+    .container-wrapper {
+        width: 80%;
+    }
+
+    .info p {
+        font-size: 20px;
+    }
+
+    .project_img {
+        width: 300px;
+    }
 }
 
 @media screen and (max-width: 750px){
@@ -242,5 +292,18 @@ a:hover {
 
     .home-container{
         flex-direction: column;
+    }
+
+    .container-wrapper {
+        width: 90vw;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project_img {
+        margin: 0;
     }
 }
