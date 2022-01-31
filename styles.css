@@ -216,8 +216,13 @@ a:hover {
 }
 
 .project_img {
-    width: 300px;
+    height: 20vw;
     margin-left: 100px;
+}
+
+.project_tm {
+    height: 15vw;
+    margin-left: 50px;
 }
 
 
@@ -279,10 +284,6 @@ a:hover {
     .info p {
         font-size: 20px;
     }
-
-    .project_img {
-        width: 300px;
-    }
 }
 
 @media screen and (max-width: 750px){
@@ -304,6 +305,12 @@ a:hover {
     }
 
     .project_img {
+        height: 250px;
+        margin: 0;
+    }
+
+    .project_tm {
+        height: 200px;
         margin: 0;
     }
 }
