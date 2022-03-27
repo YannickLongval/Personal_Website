@@ -44,7 +44,8 @@ var isDark = true;
 function switchMode(){
     if (isDark) {
         isDark = false
-        document.getElementById("dark").innerHTML = "Dark Mode"
+        document.getElementById("dark").className = "fa fa-moon-o"
+        document.getElementById("dark").style.transform = "rotate(360deg)"
         document.getElementById("logo").src = "img/YL_Logo_light.png"
         document.documentElement.style.setProperty('--main', '#dddddd');
         document.documentElement.style.setProperty('--text', '#000000');
@@ -52,7 +53,8 @@ function switchMode(){
         document.documentElement.style.setProperty('--header', '#ffffff')
     } else {
         isDark = true
-        document.getElementById("dark").innerHTML = "Light Mode"
+        document.getElementById("dark").className = "fa fa-sun-o"
+        document.getElementById("dark").style.transform = "rotate(0deg)"
         document.getElementById("logo").src = "img/YL_Website.png"
         document.documentElement.style.setProperty('--main', '#323044')
         document.documentElement.style.setProperty('--text', '#ffffff')
