@@ -38,6 +38,36 @@ const highlightMenu = () => {
 window.addEventListener('scroll', highlightMenu)
 window.addEventListener('click', highlightMenu)
 
+var text = [" passions", " hobbies", " goals", "self."]
+var typeSpeed = 80
+var deleteSpeed = 150
+var wordIndex = 0
+var i = 0
+
+function type() {
+    if (i < text[wordIndex].length) {
+        document.getElementById("me").innerHTML += text[wordIndex].charAt(i);
+        i++;
+        setTimeout(type, typeSpeed);
+    } else if(wordIndex != text.length - 1){
+        setTimeout(deleteText, 2000)
+    }
+
+}
+
+function deleteText() {
+    if (i != 0) {
+        document.getElementById("me").innerHTML = document.getElementById("me").innerHTML.slice(0, -1);
+        i--;
+        setTimeout(deleteText, deleteSpeed);
+    }
+    else {
+        wordIndex++;
+        setTimeout(type, 1000)
+    }
+}
+
+window.type()
 
 var isDark = true;
 

@@ -13,6 +13,11 @@
     transition: all 0.5s ease;
 }
 
+.container-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
 #dark {
     font-size: 25px;
 }
@@ -192,16 +197,6 @@ a:hover {
 .highlight {
     box-shadow: inset 0 -10px 5px 0px var(--comp);
     transition: all 0.3s ease;
-}
-
-.container {
-    width: 100vw;
-    height: 80vh;
-}
-
-.container-wrapper {
-    width: 60%;
-    margin: auto;
 }
 
 .content {
