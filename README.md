@@ -1,4 +1,5 @@
 # Personal_Website
 
-Go check it out:
-https://yannicklongval.herokuapp.com/
+Original website made from vanilla HTML/CSS/JS
+
+Was deployed on Heroku, but no longer active.
